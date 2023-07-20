@@ -16,15 +16,22 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier:format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "prettier:fix": "prettier --write \"src/**/*.{js,jsx}\"",
     "prettier:check": "prettier --check \"src/**/*.{js,jsx}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "eslint:fix": "eslint --fix --ext .js,.jsx src/",
+    "eslint:check": "eslint --fix --cache --ext .js,.jsx src/"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "eslint:recommended",
+      "prettier"
+    ],
+    "rules": {
+      "yoda": "error"
+    }
   },
   "browserslist": {
     "production": [
@@ -39,6 +46,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "prettier": "3.0.0"
