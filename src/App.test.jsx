@@ -8,4 +8,9 @@ test("renders learn react link", () => {
 
   const listSubjects = screen.getByText(/Hello/i)
   expect(listSubjects).toBeInTheDocument()
+  expect(listSubjects).toMatchInlineSnapshot(`
+    <h1>
+      Hello!
+    </h1>
+  `)
 })
