@@ -54,7 +54,7 @@
     "prettier": "3.0.0"
   },
   "lint-staged": {
-    "*.js,*.jsx": "eslint --fix ",
+    "*.js": "eslint --fix ",
     "**/*": "prettier --write --ignore-unknown"
   }
 }
