@@ -1,3 +1,14 @@
+# Specific to this project
+
+1. Prettier is installed and can be run manually with `npm run prettier:fix` or `npm run prettier:check`
+2. I've added `package.json` scripts to fix or check files with `npm run eslint:fix` or `npm run eslint:check`
+3. Husky will eslint and prettier when you try to commit. It will fail if eslint fails, but will fix prettier issues automatically
+4. Run this project with `npm run start`
+5. Build this project with `npm run build`
+6. Jest is available. React Testing Library is already installed. Run `npm t` to start Jest in watch mode
+
+### Generic Create React App Spiel Below
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
