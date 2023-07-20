@@ -6,6 +6,7 @@
 4. Run this project with `npm run start`
 5. Build this project with `npm run build`
 6. Jest is available. React Testing Library is already installed. Run `npm t` to start Jest in watch mode
+7. I'm not going to commit what's in `src/wanikani_data/subjects` because it's not my data, but I have a lifetime account personally. If I need to get these files again I can just get them from their api - https://docs.api.wanikani.com/. It was super easy to get an API Token and use Insomnia to fetch them
 
 ### Generic Create React App Spiel Below
 
