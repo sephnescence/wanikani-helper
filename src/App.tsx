@@ -1,14 +1,10 @@
 import React from "react"
 
-type AppPropTypes = {
-  greeting: string
-}
-
-const App = (props: AppPropTypes) => {
+const App = ({greeting}: {greeting?: string}) => {
   return (
     <div role="application">
       <h1>Hello world! I am using React</h1>
-      {props.greeting && <h2>{props.greeting}</h2>}
+      {greeting && <h2>{greeting}</h2>}
     </div>
   )
 }
