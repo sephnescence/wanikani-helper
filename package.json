@@ -6,14 +6,14 @@
   "scripts": {
     "build": "webpack .",
     "coverage": "jest --coverage",
-    "eslint:check": "eslint --fix --cache --ext .js,.jsx src/",
-    "eslint:fix": "eslint --fix --ext .js,.jsx src/",
-    "prettier:check": "prettier --check \"src/**/*.{js,jsx}\"",
-    "prettier:fix": "prettier --write \"src/**/*.{js,jsx}\"",
+    "eslint:check": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx src/",
+    "eslint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx src/",
+    "prepare": "husky install",
+    "prettier:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
+    "prettier:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "start": "webpack-dev-server .",
     "test": "jest --watch",
-    "tsc": "tsc --noEmit",
-    "prepare": "husky install"
+    "tsc": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
