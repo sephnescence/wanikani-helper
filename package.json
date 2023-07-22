@@ -8,7 +8,7 @@
     "eslint:fix": "eslint --fix --ext .js,.jsx src/",
     "eslint:check": "eslint --fix --cache --ext .js,.jsx src/",
     "start": "webpack-dev-server .",
-    "test": "jest",
+    "test": "jest --watch",
     "coverage": "jest --coverage",
     "prettier:fix": "prettier --write \"src/**/*.{js,jsx}\"",
     "prettier:check": "prettier --check \"src/**/*.{js,jsx}\""
