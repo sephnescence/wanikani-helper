@@ -1,6 +1,7 @@
 {
     "**/*.{js,jsx}": [
         "eslint --fix --cache",
-        "prettier --write --ignore-unknown"
+        "prettier --write --ignore-unknown",
+        "tsc --noEmit"
     ]
 }

@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack .",
-    "eslint:fix": "eslint --fix --ext .js,.jsx src/",
+    "coverage": "jest --coverage",
     "eslint:check": "eslint --fix --cache --ext .js,.jsx src/",
+    "eslint:fix": "eslint --fix --ext .js,.jsx src/",
+    "prettier:check": "prettier --check \"src/**/*.{js,jsx}\"",
+    "prettier:fix": "prettier --write \"src/**/*.{js,jsx}\"",
     "start": "webpack-dev-server .",
     "test": "jest --watch",
-    "coverage": "jest --coverage",
-    "prettier:fix": "prettier --write \"src/**/*.{js,jsx}\"",
-    "prettier:check": "prettier --check \"src/**/*.{js,jsx}\""
+    "tsc": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
