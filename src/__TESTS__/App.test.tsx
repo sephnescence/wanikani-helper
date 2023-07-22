@@ -4,7 +4,7 @@ import React from "react"
 import App from "../App"
 
 test("App tests", () => {
-  render(<App />)
+  render(<App greeting='Heya!' />)
   const app = screen.getByRole("application")
 
   expect(app).toMatchInlineSnapshot(`

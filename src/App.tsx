@@ -8,8 +8,7 @@ const App = (props: AppPropTypes) => {
   return (
     <div role="application">
       <h1>Hello world! I am using React</h1>
-
-      {props.greetings && <h2>{props.greeting}</h2>}
+      {props.greeting && <h2>{props.greeting}</h2>}
     </div>
   )
 }

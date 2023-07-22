@@ -12,7 +12,8 @@
     "prettier:fix": "prettier --write \"src/**/*.{js,jsx}\"",
     "start": "webpack-dev-server .",
     "test": "jest --watch",
-    "tsc": "tsc --noEmit"
+    "tsc": "tsc --noEmit",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -43,7 +44,8 @@
     "typescript": "^5.1.6",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "husky": "^8.0.0"
   },
   "dependencies": {
     "react": "^18.2.0",
