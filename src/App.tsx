@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 /*
 The following works but should be avoided
@@ -29,11 +29,23 @@ Check README.md for more info
 */
 
 const App = ({ greeting }: AppProps) => {
+  const [inputText, setInputText] = useState<string>()
+
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    setInputText(e.target.value)
+  }
+
   return (
-    <div role="application">
-      <h1>Hello world! I am using React</h1>
-      {greeting && <h2>{greeting}</h2>}
-    </div>
+    <>
+      <div role="application">
+        <h1>Hello world! I am using React</h1>
+        {greeting && <h2>{greeting}</h2>}
+      </div>
+      <form>
+        <label htmlFor="inputText">Input text</label>
+        <input id="inputText" type="text" value={inputText} onChange={(e) => onChange(e)} />
+      </form>
+    </>
   )
 }
 
