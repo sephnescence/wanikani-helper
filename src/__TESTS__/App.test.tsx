@@ -14,6 +14,9 @@ test("App tests", () => {
       <h1>
         Hello world! I am using React
       </h1>
+      <h2>
+        Heya!
+      </h2>
     </div>
   `)
 
