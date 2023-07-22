@@ -24,6 +24,8 @@ interface ExtraAppProps extends AppProps {
 
 Alternatively, it a type is used enough, we can use global.d.ts, as a way to declare it globally,
   so you don't even need to import it. Magic. Which is actually kind of bad, but hey. It's cleaner code
+
+Check README.md for more info
 */
 
 const App = ({ greeting }: AppProps) => {
