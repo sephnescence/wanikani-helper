@@ -1,7 +1,7 @@
 import React from "react"
 
 type AppPropTypes = {
-  greeting?: string
+  greeting: string
 }
 
 const App = (props: AppPropTypes) => {
