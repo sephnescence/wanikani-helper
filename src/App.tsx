@@ -32,6 +32,8 @@ const App = ({ greeting }: AppProps) => {
   const [inputText, setInputText] = useState<string>()
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    // I have to make this note, because I might forget otherwise...
+    // e.target.valueAsNumber and e.target.valueAsDate are also available
     setInputText(e.target.value)
   }
 
