@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { Children, PropsWithChildren, useState } from "react"
 
 /*
 The following works but should be avoided
@@ -28,7 +28,7 @@ Alternatively, it a type is used enough, we can use global.d.ts, as a way to dec
 Check README.md for more info
 */
 
-const App = ({ greeting }: AppProps) => {
+const App = ({ greeting, children }: PropsWithChildren<AppProps>) => {
   const [inputText, setInputText] = useState<string>()
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
@@ -47,6 +47,7 @@ const App = ({ greeting }: AppProps) => {
         <label htmlFor="inputText">Input text</label>
         <input id="inputText" type="text" value={inputText} onChange={(e) => onChange(e)} />
       </form>
+      {children}
     </>
   )
 }
